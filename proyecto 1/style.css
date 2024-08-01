@@ -94,12 +94,13 @@ header > nav {
 }
 nav > .menu {
   list-style: none;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: center;
+  gap: 50px;
   margin-top: -40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 60px;
 }
 nav > .toggle_btn {
   color: white;
@@ -108,10 +109,11 @@ nav > .toggle_btn {
   font-size: 30px;
   padding: 0 20px;
   line-height: 60px;
-  cursor: pointer;
+  margin: -50px 70px;
 }
 nav > .menu li {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 nav > .menu a {
   color: white;
@@ -136,12 +138,20 @@ nav .country {
   width: auto;
   cursor: pointer;
 }
-.country > button {
+.selector > button {
   border-radius: 20px;
   padding: 7px;
   color: black;
   font-weight: 600;
   cursor: pointer;
+  margin: 10px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.selector > p {
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 5px;
+  margin-top: 10px;
 }
 nav.toggle_btn {
   color: white;
@@ -151,18 +161,19 @@ nav.toggle_btn {
 }
 
 main {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 main > h2 {
   font-size: 30px;
   font-weight: 400;
+  margin-left: 20px;
 }
 main > .merch {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
   width: 100%;
-  margin: 50;
+  background-color: rgba(250, 242, 242, 0.071);
 }
 .merch > img {
   display: flex;
@@ -174,6 +185,7 @@ main > .merch {
   flex-wrap: wrap;
   display: flex;
   margin: 50px 10px;
+  justify-content: center;
 }
 .merch > ul a {
   text-decoration: none;
@@ -181,79 +193,129 @@ main > .merch {
   font-weight: 800;
   color: #121212;
 }
-.gorro-negro > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.gorro-negro > a img {
+  background-color: rgba(128, 128, 128, 0.245);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.camiseta > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.gorro-negro > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.camiseta > a img {
+  background-color: rgba(128, 128, 128, 0.248);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.camiseta-logo > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.camiseta > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.camiseta-logo > a img {
+  background-color: rgba(128, 128, 128, 0.244);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.sudadera > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.camiseta-logo > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.sudadera > a img {
+  background-color: rgba(128, 128, 128, 0.246);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.disco > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.sudadera > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.disco > a img {
+  background-color: rgba(128, 128, 128, 0.246);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.gorro-rojo > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.disco > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.gorro-rojo > a img {
+  background-color: rgba(128, 128, 128, 0.245);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.sudadera-estampado > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.gorro-rojo > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.sudadera-estampado > a img {
+  background-color: rgba(128, 128, 128, 0.247);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.pack > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.sudadera-estampado > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.pack > a img {
+  background-color: rgba(128, 128, 128, 0.245);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.camiseta-tyler-y-josh > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.pack > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.camiseta-tyler-y-josh > a img {
+  background-color: rgba(128, 128, 128, 0.245);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.camiseta-clancy > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.camiseta-tyler-y-josh > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.camiseta-clancy > a img {
+  background-color: rgba(128, 128, 128, 0.247);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.cd-digital > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.camiseta-clancy > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.cd-digital > a img {
+  background-color: rgba(128, 128, 128, 0.247);
   max-width: 431px;
   max-height: 340px;
   margin: 50px 5px;
+  cursor: pointer;
 }
-.vinilo > img {
-  background-color: rgba(128, 128, 128, 0.112);
+.cd-digital > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+.vinilo > a img {
+  background-color: rgba(128, 128, 128, 0.246);
   max-width: 431px;
   max-height: 340px;
-  margin: 50px 0;
+  margin: 50px 0px;
+  cursor: pointer;
 }
-
+.vinilo > a img:hover {
+  background-color: rgba(0, 208, 255, 0.419);
+}
+iframe {
+  margin: 50px 50px;
+}
 footer {
   margin: 100px 0;
   background-color: #121212;
@@ -277,6 +339,7 @@ footer > h4 {
 .value {
   width: 10%;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 footer > p {
   font-size: 12px;
@@ -291,6 +354,7 @@ footer > .policy a {
 }
 footer > .media img {
   margin: 50px 30%;
+  cursor: pointer;
 }
 .dropdown_menu {
   display: none;
@@ -317,8 +381,36 @@ footer > .media img {
   color: aliceblue;
 }
 .dropdown_menu > .selector {
-  color: rgb(4, 192, 255);
+  color: aliceblue;
   font-weight: 800;
+  font-size: 15px;
+}
+.dropdown_menu > .selector button {
+  border-radius: 20px;
+  padding: 7px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 1220px) {
+  nav > .menu {
+    display: none;
+  }
+  nav > .toggle_btn {
+    display: none;
+  }
+}
+@media (max-width: 1219px) {
+  .dropdown_menu {
+    display: none;
+  }
+  nav > .toggle_btn {
+    display: block;
+    margin-top: -90px;
+    margin-left: 30px;
+  }
 }
 @media (max-width: 900px) {
   nav > .menu {
@@ -328,6 +420,22 @@ footer > .media img {
     display: block;
   }
   .dropdown_menu {
-    display: block;
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .dropdown_menu {
+    display: none;
+  }
+  nav > .toggle_btn {
+    margin-top: -90px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 400px) {
+  nav > .toggle_btn {
+    margin: top -90px;
+    margin-left: 0px;
   }
 }
